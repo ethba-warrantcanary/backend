@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Dashboard</title>
+
+    <!-- Bootstrap core CSS -->
+    <link href="bower_components/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+    </style>
+
+</head>
+
+<body>
+<div class="container-fluid">
+
+    <div class="row">
+        <div>
+            <h1 class="page-header">Warrant Canary</h1>
+        </div>
+    </div>
+
+    <div class="row">
+        <div>
+            <h1 class="page-header">Check Canary:</h1>
+            <form id="check_canary_status" method="post">
+                <input type="text" name="canary_address" />
+                <input type="submit" value="Check Status" />
+            </form>
+            <div id="canary_status"></div>
+        </div>
+    </div>
+</div>
+
+<script src="bower_components/jquery/dist/jquery.min.js"></script>
+<script src="bower_components/jquery-ui/jquery-ui.min.js"></script>
+<script src="bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="bower_components/web3/dist/web3.min.js"></script>
+
+<script src="abi.js"></script>
+<script src="canary.js"></script>
+</body>
+</html>
